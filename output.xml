@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.10.4 on win32)" generated="20220506 11:13:52.644" rpa="false">
+<suite id="s1" name="Tc2" source="D:\Automation\Eclipse-Work\RobotWork\qe-mystore\test_suite\tc2.robot">
+<kw name="Open Chrome Browser" library="suites" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${cbrowser}</arg>
+</arguments>
+<msg timestamp="20220506 11:13:52.958" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20220506 11:13:52.957" endtime="20220506 11:14:01.209"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220506 11:14:01.210" endtime="20220506 11:14:01.329"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:13:52.956" endtime="20220506 11:14:01.330"></status>
+</kw>
+<test id="s1-t1" name="TC001: Select Category to Payments">
+<kw name="Login into site" library="suites" type="setup">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${signup_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:01.333" level="INFO">Clicking element '//*[@id='header']/div[2]/div/div/nav/div[1]/a'.</msg>
+<status status="PASS" starttime="20220506 11:14:01.332" endtime="20220506 11:14:03.759"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${loemail_txt_id}</arg>
+<arg>darsh@mailinator.com</arg>
+</arguments>
+<msg timestamp="20220506 11:14:03.760" level="INFO">Typing text 'darsh@mailinator.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220506 11:14:03.759" endtime="20220506 11:14:03.858"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${lopwd_txt_id}</arg>
+<arg>Admin@123</arg>
+</arguments>
+<msg timestamp="20220506 11:14:03.859" level="INFO">Typing password into text field 'id:passwd'.</msg>
+<msg timestamp="20220506 11:14:03.933" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220506 11:14:04.041" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220506 11:14:03.858" endtime="20220506 11:14:04.041"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${sign_in_btn_id}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:04.041" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220506 11:14:04.041" endtime="20220506 11:14:06.531"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:14:09.540" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:06.531" endtime="20220506 11:14:09.540"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:01.332" endtime="20220506 11:14:09.540"></status>
+</kw>
+<kw name="Click on Women Category Menu" library="women_category">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${women_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:09.541" level="INFO">Clicking element '//*[@id="block_top_menu"]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20220506 11:14:09.541" endtime="20220506 11:14:13.611"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:14:16.619" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:13.612" endtime="20220506 11:14:16.619"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:09.540" endtime="20220506 11:14:16.620"></status>
+</kw>
+<kw name="Select Size Filter" library="women_category">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${fisize_cb_id}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:16.623" level="INFO">Selecting checkbox 'id:layered_id_attribute_group_1'.</msg>
+<status status="PASS" starttime="20220506 11:14:16.622" endtime="20220506 11:14:16.785"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:14:19.787" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:16.786" endtime="20220506 11:14:19.787"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:16.621" endtime="20220506 11:14:19.788"></status>
+</kw>
+<kw name="Select Product 1" library="women_category">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${overproduct_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:19.791" level="INFO">Simulating Mouse Over on element '//*[@id="center_column"]/ul/li[1]'.</msg>
+<status status="PASS" starttime="20220506 11:14:19.790" endtime="20220506 11:14:20.131"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:14:23.135" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:20.132" endtime="20220506 11:14:23.135"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:19.789" endtime="20220506 11:14:23.136"></status>
+</kw>
+<kw name="Add to Cart [Product 1]" library="women_category">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${addcart1_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:23.138" level="INFO">Clicking link '//*[@id="center_column"]/ul/li[1]/div/div[2]/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20220506 11:14:23.138" endtime="20220506 11:14:23.270"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20220506 11:14:28.278" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:23.270" endtime="20220506 11:14:28.278"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:23.136" endtime="20220506 11:14:28.279"></status>
+</kw>
+<kw name="Click on Continue Shopping" library="women_category">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${continueshopping_ele_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:28.281" level="INFO">Clicking element 'xpath://*[@id="layer_cart"]/div[1]/div[2]/div[4]/span'.</msg>
+<status status="PASS" starttime="20220506 11:14:28.280" endtime="20220506 11:14:28.398"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20220506 11:14:33.407" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:28.398" endtime="20220506 11:14:33.407"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:28.279" endtime="20220506 11:14:33.408"></status>
+</kw>
+<kw name="Select Product 2" library="women_category">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${overproduct2_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:33.410" level="INFO">Simulating Mouse Over on element '//*[@id="center_column"]/ul/li[2]'.</msg>
+<status status="PASS" starttime="20220506 11:14:33.409" endtime="20220506 11:14:33.723"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:14:36.727" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:33.723" endtime="20220506 11:14:36.727"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:33.408" endtime="20220506 11:14:36.728"></status>
+</kw>
+<kw name="Add to Cart [Product 2]" library="women_category">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${addcart2_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:36.730" level="INFO">Clicking link '//*[@id="center_column"]/ul/li[2]/div/div[2]/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20220506 11:14:36.729" endtime="20220506 11:14:36.840"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20220506 11:14:41.848" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:36.840" endtime="20220506 11:14:41.848"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:36.728" endtime="20220506 11:14:41.849"></status>
+</kw>
+<kw name="Click on Proceed To Checkout" library="women_category">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${proceedtocheckoout_ele_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:41.851" level="INFO">Clicking element 'xpath://*[@id="layer_cart"]/div[1]/div[2]/div[4]/a'.</msg>
+<status status="PASS" starttime="20220506 11:14:41.850" endtime="20220506 11:14:46.696"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20220506 11:14:51.704" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:46.696" endtime="20220506 11:14:51.704"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:41.849" endtime="20220506 11:14:51.705"></status>
+</kw>
+<kw name="Increase Product Quantity" library="summary">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${qtyincreasebutton_btn_xapth}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:51.707" level="INFO">Simulating Mouse Over on element '//*[@id="cart_quantity_up_1_1_0_684899"]'.</msg>
+<status status="PASS" starttime="20220506 11:14:51.706" endtime="20220506 11:14:52.035"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${qtyincreasebutton_btn_xapth}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:52.037" level="INFO">Clicking element '//*[@id="cart_quantity_up_1_1_0_684899"]'.</msg>
+<status status="PASS" starttime="20220506 11:14:52.036" endtime="20220506 11:14:52.144"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:14:55.146" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:52.144" endtime="20220506 11:14:55.146"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:51.705" endtime="20220506 11:14:55.146"></status>
+</kw>
+<kw name="Decrease Product Quantity" library="summary">
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>${qtydecreasebutton_btn_xapth}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:55.149" level="INFO">Simulating Mouse Over on element '//*[@id="cart_quantity_down_1_1_0_684899"]'.</msg>
+<status status="PASS" starttime="20220506 11:14:55.148" endtime="20220506 11:14:55.476"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${qtydecreasebutton_btn_xapth}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:55.477" level="INFO">Clicking element '//*[@id="cart_quantity_down_1_1_0_684899"]'.</msg>
+<status status="PASS" starttime="20220506 11:14:55.476" endtime="20220506 11:14:55.551"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:14:58.557" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:55.551" endtime="20220506 11:14:58.558"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:55.147" endtime="20220506 11:14:58.558"></status>
+</kw>
+<kw name="Delete added Product" library="summary">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${delete_product_link_xapth}</arg>
+</arguments>
+<msg timestamp="20220506 11:14:58.560" level="INFO">Clicking link '//*[@id="1_1_0_684899"]'.</msg>
+<status status="PASS" starttime="20220506 11:14:58.560" endtime="20220506 11:14:58.637"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:01.645" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:14:58.637" endtime="20220506 11:15:01.646"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:58.559" endtime="20220506 11:15:01.646"></status>
+</kw>
+<kw name="Click on Summary Checkout" library="summary">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${summarychecout_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:01.649" level="INFO">Clicking link '//*[@id="center_column"]/p[2]/a[1]'.</msg>
+<status status="PASS" starttime="20220506 11:15:01.648" endtime="20220506 11:15:04.039"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:07.047" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:15:04.039" endtime="20220506 11:15:07.048"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:01.647" endtime="20220506 11:15:07.048"></status>
+</kw>
+<kw name="Click on Address Checkout button" library="address">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${addresscheckout_btn_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:07.051" level="INFO">Clicking element '//*[@id="center_column"]/form/p/button'.</msg>
+<status status="PASS" starttime="20220506 11:15:07.050" endtime="20220506 11:15:09.032"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:12.035" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:15:09.032" endtime="20220506 11:15:12.035"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:07.049" endtime="20220506 11:15:12.036"></status>
+</kw>
+<kw name="Click on agree terms and conditions checkbox" library="shipping">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<arguments>
+<arg>${agree_cb_id}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:12.038" level="INFO">Selecting checkbox 'id:cgv'.</msg>
+<status status="PASS" starttime="20220506 11:15:12.037" endtime="20220506 11:15:12.210"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:15.225" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:15:12.211" endtime="20220506 11:15:15.226"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:12.036" endtime="20220506 11:15:15.226"></status>
+</kw>
+<kw name="Click on shipping proceed to checkout" library="shipping">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${shippingcheckout_btn_name}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:15.228" level="INFO">Clicking button 'name:processCarrier'.</msg>
+<status status="PASS" starttime="20220506 11:15:15.228" endtime="20220506 11:15:17.299"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:20.301" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:15:17.299" endtime="20220506 11:15:20.301"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:15.226" endtime="20220506 11:15:20.301"></status>
+</kw>
+<kw name="Click on Pay By Bank Wire" library="payment">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${paybybankwire_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:20.302" level="INFO">Clicking link '//*[@id="HOOK_PAYMENT"]/div[1]/div/p/a'.</msg>
+<status status="PASS" starttime="20220506 11:15:20.302" endtime="20220506 11:15:22.138"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:25.143" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:15:22.138" endtime="20220506 11:15:25.143"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:20.301" endtime="20220506 11:15:25.144"></status>
+</kw>
+<kw name="Click on confirm order button" library="payment">
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>${confirmorder_btn_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:25.145" level="INFO">Clicking button '//*[@id="cart_navigation"]/button'.</msg>
+<status status="PASS" starttime="20220506 11:15:25.144" endtime="20220506 11:15:27.872"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:30.878" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:15:27.873" endtime="20220506 11:15:30.879"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:25.144" endtime="20220506 11:15:30.879"></status>
+</kw>
+<kw name="Click on Beck to Orders" library="payment">
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>${backorders_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:30.881" level="INFO">Clicking link '//*[@id="center_column"]/p/a'.</msg>
+<status status="PASS" starttime="20220506 11:15:30.881" endtime="20220506 11:15:33.281"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220506 11:15:36.299" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220506 11:15:33.282" endtime="20220506 11:15:36.299"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:30.880" endtime="20220506 11:15:36.299"></status>
+</kw>
+<kw name="Logout from site" library="suites" type="teardown">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${sign_out_link_xpath}</arg>
+</arguments>
+<msg timestamp="20220506 11:15:36.302" level="INFO">Clicking element '//*[@id="header"]/div[2]/div/div/nav/div[2]/a'.</msg>
+<status status="PASS" starttime="20220506 11:15:36.302" endtime="20220506 11:15:39.758"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:36.301" endtime="20220506 11:15:39.758"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:14:01.330" endtime="20220506 11:15:39.758" critical="yes"></status>
+</test>
+<kw name="Close All Browser" library="suites" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220506 11:15:39.759" endtime="20220506 11:15:42.006"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:15:39.759" endtime="20220506 11:15:42.006"></status>
+</kw>
+<status status="PASS" starttime="20220506 11:13:52.647" endtime="20220506 11:15:42.006"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Tc2">Tc2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
