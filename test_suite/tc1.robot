@@ -36,3 +36,5 @@ TC003 - Add Sign Up Details On Sign Up Page and Register The User
     Enter Mobile Number
     Click on Register Button
     Sleep    3
+    Sleep    3
+    Sleep    3
